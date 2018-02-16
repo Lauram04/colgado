@@ -27,3 +27,8 @@ Then(/^debo ver "([^"]*)"$/) do |texto|
   expect(page.body).to match /#{texto}/m
 end
 
+Then(/^no debo ver "([^"]*)"$/) do |texto|
+  expect(page.body).not_to match /#{texto}/m
+end
+
+
