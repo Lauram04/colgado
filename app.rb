@@ -6,6 +6,6 @@ get '/' do
 end
 
 post '/validar' do
-	"Esta"
+	session['validacion']="Esta"
 	    erb :colgado
 end
