@@ -6,5 +6,6 @@ get '/' do
 end
 
 post '/validar' do
-    erb :colgado
+	"Esta"
+	    erb :colgado
 end

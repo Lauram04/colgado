@@ -12,6 +12,6 @@ Given(/^Presiono "([^"]*)"$/) do |name|
 end
 
 Then(/^debo ver "([^"]*)"$/) do |texto|
-  expect(page.body).to match /#{text}/m
+  expect(page.body).to match /#{texto}/m
 end
 
