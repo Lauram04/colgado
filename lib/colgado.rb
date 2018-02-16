@@ -9,10 +9,7 @@ class Colgado
 
 	def lineas
 		i = 0
-		lineas = ""
-		while i < @palabra.length do
-			lineas = lineas + "_ "
-			i++
-		end
+		lineas = "_ " * @palabra.length
+		return lineas[0..-2]
 	end
 end
