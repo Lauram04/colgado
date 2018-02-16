@@ -7,3 +7,7 @@ get '/' do
 	session["lineas"] = "_ _ _ _"
 	erb :colgado
 end
+
+post '/validar' do
+    erb :colgado
+end
