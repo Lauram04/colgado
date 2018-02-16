@@ -11,11 +11,17 @@ get '/' do
 end
 
 post '/validar' do
-	session["contador"] += 1
+	letra = Colgado.new
+	if letra.evaluar(params["campo"])=="Esta"
+		session["contador"] += 1
+		session["validacion"]="Esta"
+	else
+		session["validacion"]="No esta"
+	end
+	
     if session["contador"] == 4
     	erb :resultado
     else
-    	session['validacion']="Esta"
     	erb :colgado
     end
 end
