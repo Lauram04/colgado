@@ -1,10 +1,11 @@
 require 'sinatra'
 require './config'
+require './lib/colgado.rb'
 
 get '/' do
-	session["palabra"] = "neta"
-	session["longitud"] = session["palabra"].length
-	session["lineas"] = "_ _ _ _"
+	juego = Colgado.new
+	session["longitud"] = juego.longitud
+	session["lineas"] = juego.lineas
 	erb :colgado
 end
 
