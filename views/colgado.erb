@@ -3,14 +3,20 @@
 <head>
 	<title></title>
 </head>
-<body>
-	<%= session['longitud'] %> letras %>
+<body> 
+<center>
+
 	<br>
-	<%= session['lineas'] %>.%>
+	<h1>
+	<%= session['lineas'] %>. 
+	</h1>
+   <br>
+   <%= session['longitud'] %> letras 
+   <br>
   <form action="/validar" method="POST">
      <input type="text" name="campo">
      <input type="submit" value="validar">
   </form>
-  Esta
+	</center>
 </body>
 </html>

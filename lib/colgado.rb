@@ -1,4 +1,5 @@
 class Colgado
+	
 	def initialize
 		@palabra = "neta"
 	end
