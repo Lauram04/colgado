@@ -13,4 +13,9 @@ class Colgado
 		lineas = "_ " * @palabra.length
 		return lineas[0..-2]
 	end
+
+	## Evaluar position Letra
+   def evaluar (letra)
+   	@palabra.index(letra)
+   end
 end

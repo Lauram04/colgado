@@ -5,7 +5,8 @@ Feature:
      Given Que inicie el juego 
      And Inserto una "A" en "campo"
      And Presiono "validar"
-     Then debo ver "Presencia"
+     # Then debo ver "Presencia"
+      Then debo ver "Esta"
 
      Scenario: Quiero que me aparezcan las letras para ver como se forma la palabra
 

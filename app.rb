@@ -11,6 +11,8 @@ get '/' do
 end
 
 post '/validar' do
+	session['validacion']="Esta"
+	    erb :colgado
     session["contador"] += 1
     if session["contador"] == 4
     	erb :resultado
