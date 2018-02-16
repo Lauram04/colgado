@@ -5,19 +5,7 @@
 </head>
 <body> 
     <center>
-
 	<br>
-	<h1>
-	<%= session['lineas'] %>. 
-	</h1>
-   <br>
-   <%= session['longitud'] %> letras 
-   <br>
-  <form action="/validar" method="POST">
-     <input type="text" name="campo">
-     <input type="submit" value="validar">
-  </form>
-  <%=session['validacion']%>
 	<h1><%= session['lineas'] %>.</h1>
    	<br>
    	<%= session['longitud'] %> letras 
@@ -28,7 +16,6 @@
     	<input type="submit" value="validar">
 	</form>
 	<%= session['validacion'] %>
-
 	</center>
 </body>
 </html>
