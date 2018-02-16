@@ -12,11 +12,12 @@ describe Colgado do
 
     it "agregan letra 'a'" do 
     	letra = Colgado.new
-    	expect(letra.evaluar("n")).to eq 0
+    	expect(letra.evaluar("n")).to eq "Esta"
     end
 
     it "agregan letra no incliuda en la palabra" do 
     	letra = Colgado.new
-    	expect(letra.evaluar("z")).to eq nil
+    	expect(letra.evaluar("z")).to eq "No esta"
     end 
+
 end

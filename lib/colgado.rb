@@ -16,6 +16,12 @@ class Colgado
 
 	## Evaluar position Letra
    def evaluar (letra)
-   	@palabra.index(letra)
+	   	if @palabra.index(letra) == nil 
+	   		return "No esta"
+	   	else
+	   		return "Esta"
+	   	end  
    end
+
+
 end
