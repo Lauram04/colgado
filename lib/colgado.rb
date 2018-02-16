@@ -2,6 +2,8 @@ class Colgado
 	
 	def initialize
 		@palabra = "neta"
+		@lineas
+
 	end
 
 	def longitud
@@ -10,8 +12,8 @@ class Colgado
 
 	def lineas
 		i = 0
-		lineas = "_ " * @palabra.length
-		return lineas[0..-2]
+		@lineas = "_ " * @palabra.length
+		return @lineas[0..-2]
 	end
 
 	## Evaluar position Letra
@@ -23,5 +25,14 @@ class Colgado
 	   	end  
    end
 
+   def sustituye (letra)
+   		ubicacion = @palabra.index(letra)
+   		
+   		if @lineas == nil
+   			@lineas = lineas
+   		end
+   		@lineas[ubicacion*2] = letra
+     	return @lineas
+   end 
 
 end

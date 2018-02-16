@@ -9,4 +9,10 @@ Feature:
      Then debo ver "No esta"
 
      Scenario: Quiero que me aparezcan las letras para ver como se forma la palabra
+     Given Que inicie el juego
+     And Inserto una "a" en "campo"
+     And Presiono "validar"
+     Then debo ver "_ _ _ a"
+
+
 
