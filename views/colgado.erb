@@ -6,13 +6,13 @@
 <body> 
     <center>
 	<br>
-	<h1><%= session['lineas'] %>.</h1>
+	<h1><%= session['lineas'] %></h1>
    	<br>
    	<%= session['longitud'] %> letras 
    	<br/>
    	<br/>
   	<form action="/validar" method="POST">
-    	<input type="text" name="campo">
+    	<input type="text" name="campo" maxlength="1">
     	<input type="submit" value="validar">
     	<%= session['validacion'] %>
 	</form>
