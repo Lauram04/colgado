@@ -15,9 +15,6 @@ post '/validar' do
 	letra = session["letra"]
 	if letra.evaluar(params["campo"])=="Esta"
 		session["lineas"] = letra.sustituye(params["campo"])
-		session["validacion"]="Esta"
-	else
-		session["validacion"]="No esta"
 	end
 	
     if letra.resultado
